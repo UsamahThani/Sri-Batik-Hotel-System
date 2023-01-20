@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Staff Login</title>
+        <link rel="stylesheet" href="login.css">
+        <link rel="stylesheet" href="master.css">
+        <link rel="icon" href="https://i.imgur.com/9aPLcte.png">
+    </head>
+    <body>
+        <div class="box">
+            <div class="login">
+                <h2>Admin Login</h2>
+                <form method="POST" action="login.do">
+                    <div class="inputBox">
+                        <input type="text" name="adminId" required="required">
+                        <span>Admin ID</span>
+                        <i></i>
+                    </div>
+                    <div class="inputBox">
+                        <input type="password" name="adminPass" required="required">
+                        <span>Password</span>
+                        <i></i>
+                    </div>
+                    <input type="hidden" name="formType" value="admin">
+                    <br><input type="submit" value="Login">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
