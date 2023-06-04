@@ -1,0 +1,48 @@
+.room__container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: auto 50px auto 50px;
+}
+
+.room{
+    text-align: center;
+    border: 2px solid black;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.room__number{
+    font-weight: bold;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s ease;
+}
+
+.room:hover .room__number {
+    transform: translate(-50%, -100%);
+}
+
+.room__detail {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    transition: bottom 0.3s ease;
+}
+
+.room:hover .room__detail {
+    bottom: 0;
+}
+
+.room__type,
+.room__price,
+.room__status {
+    display: block;
+}
